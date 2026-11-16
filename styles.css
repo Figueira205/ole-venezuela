@@ -156,13 +156,26 @@ h2 { font-size: clamp(2rem, 5vw, 3.2rem); }
 
 /* ---------- Nosotros ---------- */
 .story { background: var(--crema); }
-.story__inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(24px, 6vw, 80px); align-items: center; }
+.story__inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(24px, 6vw, 80px); align-items: center; margin-bottom: 48px; }
+.story__photo { margin: 0; }
+.story__photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); box-shadow: 14px 14px 0 var(--vino); }
 .story blockquote { margin: 24px 0 0; font: 400 1.6rem/1.4 var(--script); color: var(--vino); }
-.story__said { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.story__said { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 860px) { .story__said { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .story__said { grid-template-columns: 1fr; } }
 .story__said li { background: var(--crema-clara); border-left: 5px solid var(--naranja); border-radius: 12px; padding: 16px 20px; }
 .story__said b { display: block; font: 700 1.35rem/1.2 var(--display); color: var(--vino); }
 .story__said span { color: var(--cafe); }
 @media (max-width: 760px) { .story__inner { grid-template-columns: 1fr; } }
+
+/* ---------- Navidad ---------- */
+.xmas { background: var(--vino); color: var(--crema); padding: clamp(56px, 8vw, 96px) 0; }
+.xmas__inner { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(24px, 5vw, 64px); align-items: center; }
+.xmas h2, .xmas .script { color: var(--crema); }
+.xmas .eyebrow { color: var(--amarillo); }
+.xmas p { max-width: 46ch; margin-bottom: 28px; }
+.xmas img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 60%; border-radius: var(--radius); box-shadow: 0 0 0 6px var(--amarillo); }
+@media (max-width: 760px) { .xmas__inner { grid-template-columns: 1fr; } .xmas img { grid-row: 1; aspect-ratio: 1; } }
 
 /* ---------- Pedir ---------- */
 .order__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
