@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olé Venezuela · Restaurante venezolano en Torrejón de Ardoz</title>
+<meta name="description" content="Arepas, cachapas, empanadas, tequeños y pabellón criollo en Torrejón de Ardoz (Soto del Henares). Cocina venezolana casera, cafetería y desayunos. Terraza, comer en el local o pedir a domicilio.">
+<!-- PROTOTIPO: quitar esta línea cuando la web esté en su dominio definitivo -->
+<meta name="robots" content="noindex">
+<!-- CAMBIAR el dominio aquí, en sitemap.xml, robots.txt y llms.txt -->
+<link rel="canonical" href="https://www.olevenezuela.es/">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Olé Venezuela · Un pedacito de Venezuela en Torrejón">
+<meta property="og:description" content="Arepas, cachapas, empanadas y pabellón criollo hechos con cariño. Calle Francisco Salzillo 141, Torrejón de Ardoz.">
+<meta property="og:image" content="img/og.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Olé Venezuela",
+  "alternateName": "Olé Venezuela Cafetería - Restaurante",
+  "description": "Restaurante y cafetería de cocina venezolana casera en Torrejón de Ardoz: arepas, cachapas, empanadas, tequeños, pabellón criollo, parrilladas y bocadillos.",
+  "url": "https://www.olevenezuela.es/",
+  "image": "https://www.olevenezuela.es/img/og.jpg",
+  "logo": "https://www.olevenezuela.es/img/logo.png",
+  "telephone": "+34910236427",
+  "priceRange": "10-20 €",
+  "servesCuisine": ["Venezolana", "Latinoamericana", "Española"],
+  "acceptsReservations": "True",
+  "hasMenu": "https://www.olevenezuela.es/#carta",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Francisco Salzillo, 141",
+    "addressLocality": "Torrejón de Ardoz",
+    "addressRegion": "Madrid",
+    "postalCode": "28850",
+    "addressCountry": "ES"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "600", "bestRating": "5" },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Terraza", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Acceso para silla de ruedas", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Apto para familias", "value": true }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/olevenezuelaofc/",
+    "https://www.ubereats.com/es/store/ole-venezuela-madrid/Bl91vQO1XF6DGgyatp2t4Q"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Dónde está Olé Venezuela?", "acceptedAnswer": { "@type": "Answer", "text": "En la Calle Francisco Salzillo, 141, en Soto del Henares (Torrejón de Ardoz, Madrid). Tenemos sala, barra y terraza." } },
+    { "@type": "Question", "name": "¿Hacéis comida a domicilio?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Puedes pedir por Uber Eats, Glovo y Just Eat, o llamarnos al 910 23 64 27 para encargar y recoger." } },
+    { "@type": "Question", "name": "Nunca he probado la comida venezolana, ¿qué pido?", "acceptedAnswer": { "@type": "Answer", "text": "El Plato Degustación: 4 mini arepas, 2 tequeños, 2 tostones y 2 mini cachapas. Es la mejor forma de probar un poco de todo." } },
+    { "@type": "Question", "name": "¿Tenéis opciones vegetarianas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí: arepa vegetariana, empanadas y cachapas de queso, tequeños y plátano frito con queso." } },
+    { "@type": "Question", "name": "¿Cuánto cuesta comer en Olé Venezuela?", "acceptedAnswer": { "@type": "Answer", "text": "Entre 10 y 20 € por persona. Las empanadas cuestan desde 3,95 € y las arepas desde 7 €." } },
+    { "@type": "Question", "name": "¿Es lo mismo que Arepa Olé?", "acceptedAnswer": { "@type": "Answer", "text": "No. Olé Venezuela es un restaurante familiar e independiente de Torrejón de Ardoz, sin relación con la cadena Arepa Olé." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#carta">Saltar a la carta</a>
+
+<!-- ============ CABECERA ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#inicio" aria-label="Olé Venezuela, inicio">
+    <img src="img/logo.webp" alt="" width="44" height="44">
+    <span>Olé Venezuela</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#carta">Carta</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#visitanos">Visítanos</a>
+    <a href="#preguntas">Preguntas</a>
+    <a class="btn btn--sm" href="#pedir">Pedir a domicilio</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero__copy">
+    <p class="eyebrow">Cafetería · Restaurante · Torrejón de Ardoz</p>
+    <h1>Un pedacito de <span class="script">Venezuela</span> en Torrejón</h1>
+    <p class="hero__lead">Hoy te apetecen <strong class="hero__word" data-word>cachapas</strong>.<br>
+      Cocina criolla casera, raciones generosas y café desde por la mañana.</p>
+    <div class="hero__cta">
+      <a class="btn" href="#carta">Ver la carta</a>
+      <a class="btn btn--ghost" href="#pedir">Pedir a domicilio</a>
+    </div>
+    <p class="hero__rating"><span aria-hidden="true">★★★★★</span> <strong>4,6</strong> en Google · +600 reseñas</p>
+  </div>
+  <div class="hero__stage" data-stage>
+    <img class="hero__shot is-on" data-name="cachapas" src="img/cachapa.webp" alt="Cachapa con carne mechada, caraotas, plátano y queso, con cochino frito" width="810" height="1184" fetchpriority="high">
+    <img class="hero__shot" data-name="empanadas" src="img/empanadas.webp" alt="Empanadas venezolanas de maíz recién fritas" width="869" height="1400" loading="lazy">
+    <img class="hero__shot" data-name="parrilladas" src="img/parrillada.webp" alt="Parrillada mixta con chorizo, cochino, pollo y tostones" width="1399" height="1400" loading="lazy">
+    <img class="hero__shot" data-name="tequeños y pasapalos" src="img/pasapalos.webp" alt="Bandeja de tequeños, pastelitos, cachitos y mini empanadas" width="1399" height="1400" loading="lazy">
+    <img class="hero__badge" src="img/logo.webp" alt="" width="120" height="120">
+  </div>
+</section>
+
+<div class="flags" role="presentation"><i class="ve"></i><i class="es"></i></div>
+
+<!-- ============ FRANJA EN MOVIMIENTO ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Arepas</span><span>Cachapas</span><span>Empanadas</span><span>Tequeños</span><span>Pabellón</span><span>Patacones</span><span>Cochino frito</span><span>Tres leches</span><span>Café</span>
+    <span>Arepas</span><span>Cachapas</span><span>Empanadas</span><span>Tequeños</span><span>Pabellón</span><span>Patacones</span><span>Cochino frito</span><span>Tres leches</span><span>Café</span>
+  </div>
+</div>
+
+<!-- ============ VENTAJAS ============ -->
+<section class="perks">
+  <ul class="wrap perks__list">
+    <li data-reveal><b>4,6 ★</b><span>Más de 600 reseñas en Google</span></li>
+    <li data-reveal><b>Casero</b><span>Hecho con cariño y sabor venezolano</span></li>
+    <li data-reveal><b>Terraza</b><span>Ideal para familias y grupos</span></li>
+    <li data-reveal><b>Desde temprano</b><span>Desayunos, café y bocadillos</span></li>
+  </ul>
+</section>
+
+<!-- ============ DESTACADOS ============ -->
+<section class="section" id="destacados">
+  <div class="wrap">
+    <header class="section__head" data-reveal>
+      <p class="eyebrow">Lo que más se pide</p>
+      <h2>Sabores que <span class="script">abrazan</span></h2>
+    </header>
+    <div class="dishes">
+      <figure class="dish" data-reveal>
+        <img src="img/cachapa.webp" alt="Cachapa de pabellón con queso de mano" width="810" height="1184" loading="lazy">
+        <figcaption><b>Cachapas</b><span>De maíz tierno, con queso de mano. Desde 9,95 €</span></figcaption>
+      </figure>
+      <figure class="dish" data-reveal>
+        <img src="img/empanadas-batidos.webp" alt="Empanadas con batidos naturales" width="1393" height="1394" loading="lazy">
+        <figcaption><b>Empanadas</b><span>Crujientes, de maíz. Desde 3,95 €</span></figcaption>
+      </figure>
+      <figure class="dish" data-reveal>
+        <img src="img/parrillada.webp" alt="Parrillada mixta" width="1399" height="1400" loading="lazy">
+        <figcaption><b>Parrilladas</b><span>Para compartir. Desde 18,95 €</span></figcaption>
+      </figure>
+      <figure class="dish" data-reveal>
+        <img src="img/pasapalos.webp" alt="Tequeños, cachitos y pastelitos" width="1399" height="1400" loading="lazy">
+        <figcaption><b>Tequeños y pasapalos</b><span>El picoteo venezolano. 9,95 €</span></figcaption>
+      </figure>
+      <figure class="dish" data-reveal>
+        <img src="img/tres-leches.webp" alt="Porción de torta tres leches" width="1011" height="1400" loading="lazy">
+        <figcaption><b>Tres leches</b><span>El postre de la casa</span></figcaption>
+      </figure>
+      <figure class="dish" data-reveal>
+        <img src="img/polar.webp" alt="Cerveza Polar Pilsen bien fría" width="1354" height="1341" loading="lazy">
+        <figcaption><b>Polar bien fría</b><span>La cerveza de Venezuela</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GANCHO: PLATO DEGUSTACIÓN ============ -->
+<section class="hook">
+  <div class="wrap hook__inner" data-reveal>
+    <img src="img/batidos.webp" alt="Batidos y empanadas en la barra de Olé Venezuela" width="1052" height="1400" loading="lazy">
+    <div>
+      <p class="eyebrow">¿Primera vez con la comida venezolana?</p>
+      <h2>Empieza por el <span class="script">Plato Degustación</span></h2>
+      <p>4 mini arepas, 2 tequeños, 2 tostones y 2 mini cachapas. Un poco de todo para probarlo todo… ¡uff, qué rico!</p>
+      <p class="hook__price">18,95 €</p>
+      <a class="btn" href="#carta">Ver la carta completa</a>
+    </div>
+  </div>
+</section>
+
+<div class="flags" role="presentation"><i class="ve"></i><i class="es"></i></div>
+
+<!-- =====================================================================
+     CARTA
+     Para cambiar un plato o un precio, edita solo el texto entre etiquetas:
+       <li><span>NOMBRE <small>descripción</small></span><b>PRECIO €</b></li>
+     Para añadir un plato, copia una línea <li>…</li> entera y cámbiala.
+     Para quitarlo, borra su línea <li>…</li>.
+     ===================================================================== -->
+<section class="section menu" id="carta">
+  <div class="wrap">
+    <header class="section__head" data-reveal>
+      <p class="eyebrow">Nuestra carta</p>
+      <h2>Hecho en casa, <span class="script">como allá</span></h2>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Secciones de la carta" hidden data-tabs>
+      <button role="tab" aria-selected="true" aria-controls="c-empanadas">Empanadas</button>
+      <button role="tab" aria-selected="false" aria-controls="c-arepas">Arepas</button>
+      <button role="tab" aria-selected="false" aria-controls="c-cachapas">Cachapas</button>
+      <button role="tab" aria-selected="false" aria-controls="c-compartir">Para compartir</button>
+      <button role="tab" aria-selected="false" aria-controls="c-burgers">Burgers</button>
+      <button role="tab" aria-selected="false" aria-controls="c-perritos">Perritos y sándwiches</button>
+      <button role="tab" aria-selected="false" aria-controls="c-cafeteria">Cafetería</button>
+    </div>
+
+    <!-- ---------- EMPANADAS ---------- -->
+    <div class="menu__panel" id="c-empanadas" role="tabpanel">
+      <h3>Empanadas clásicas</h3>
+      <ul class="menu__list">
+        <li><span>Queso</span><b>3,95 €</b></li>
+        <li><span>Carne molida</span><b>3,95 €</b></li>
+        <li><span>Carne mechada</span><b>3,95 €</b></li>
+        <li><span>Pollo</span><b>3,95 €</b></li>
+        <li><span>Cazón</span><b>3,95 €</b></li>
+      </ul>
+      <h3>Empanadas mixtas</h3>
+      <ul class="menu__list">
+        <li><span>Jamón y queso</span><b>4,95 €</b></li>
+        <li><span>Bacon y queso</span><b>4,95 €</b></li>
+        <li><span>Dominó <small>caraotas y queso blanco</small></span><b>4,95 €</b></li>
+        <li><span>Plátano y queso</span><b>4,95 €</b></li>
+        <li><span>Operada</span><b>4,95 €</b></li>
+        <li><span>Margariteña</span><b>5,10 €</b></li>
+        <li><span>Gordon Bleu</span><b>5,10 €</b></li>
+        <li><span>Pabellón</span><b>5,10 €</b></li>
+      </ul>
+    </div>
+
+    <!-- ---------- AREPAS ---------- -->
+    <div class="menu__panel" id="c-arepas" role="tabpanel">
+      <h3>Arepas clásicas</h3>
+      <ul class="menu__list">
+        <li><span>Carne mechada</span><b>7,00 €</b></li>
+        <li><span>Pollo</span><b>7,00 €</b></li>
+        <li><span>Queso de mano</span><b>7,00 €</b></li>
+      </ul>
+      <h3>Arepas mixtas</h3>
+      <ul class="menu__list">
+        <li><span>Pelúa <small>carne mechada hecha en casa y queso</small></span><b>7,95 €</b></li>
+        <li><span>Rubia <small>jugoso pollo y queso rallado</small></span><b>7,95 €</b></li>
+        <li><span>Reina pepiada <small>aguacate, pollo y cebolla en dados</small></span><b>7,95 €</b></li>
+        <li><span>Vegetariana <small>lechuga, tomate, cebolla, aguacate y caraotas</small></span><b>7,95 €</b></li>
+        <li><span>Sifrina <small>queso amarillo, aguacate, pollo y cebolla en dados</small></span><b>8,95 €</b></li>
+        <li><span>Pabellón <small>carne mechada, caraotas, plátano maduro y queso</small></span><b>9,95 €</b></li>
+        <li><span>Cabimera <small>carne mechada, huevo, queso, jamón, aguacate y ensalada rallada</small></span><b>10,95 €</b></li>
+      </ul>
+    </div>
+
+    <!-- ---------- CACHAPAS ---------- -->
+    <div class="menu__panel" id="c-cachapas" role="tabpanel">
+      <h3>Cachapas</h3>
+      <ul class="menu__list">
+        <li><span>Queso de mano</span><b>9,95 €</b></li>
+        <li><span>Jamón y queso</span><b>10,95 €</b></li>
+        <li><span>Queso y carne mechada</span><b>13,95 €</b></li>
+        <li><span>Queso y pollo</span><b>13,95 €</b></li>
+        <li><span>Queso y reina pepiada</span><b>14,95 €</b></li>
+        <li><span>Queso y cochino frito</span><b>14,95 €</b></li>
+        <li><span>Queso y pabellón</span><b>15,95 €</b></li>
+      </ul>
+    </div>
+
+    <!-- ---------- PARA COMPARTIR ---------- -->
+    <div class="menu__panel" id="c-compartir" role="tabpanel">
+      <h3>Compartir es vivir</h3>
+      <ul class="menu__list">
+        <li><span>Ensalada Olé <small>lechuga, cebollita crujiente, bacon, pollo crispy y salsa Olé Venezuela</small></span><b>8,95 €</b></li>
+        <li><span>Plato degustación <small>4 mini arepas, 2 tequeños, 2 tostones y 2 mini cachapas</small></span><b>18,95 €</b></li>
+        <li><span>Parrillada mixta <small>ternera, pollo, panceta, chorizo, morcilla, ensalada mixta y patatas fritas</small></span><b>18,95 €</b></li>
+        <li><span>Parrillada especial de la casa <small>churrasco, cochino frito, queso de mano, aguacate, palmitos, ensalada, chorizo, morcilla, alitas y 2 arepas</small></span><b>27,95 €</b></li>
+        <li><span>Tequeños</span><b>9,95 €</b></li>
+        <li><span>Nuggets 100 % pollo</span><b>9,95 €</b></li>
+        <li><span>Arepitas de queso a la plancha y nata</span><b>10,95 €</b></li>
+        <li><span>Ración de plátano frito con queso</span><b>10,95 €</b></li>
+        <li><span>Patacón maracucho <small>carne y pollo</small></span><b>11,50 €</b></li>
+        <li><span>Alitas de pollo fritas</span><b>11,95 €</b></li>
+        <li><span>Alitas de pollo BBQ</span><b>11,95 €</b></li>
+        <li><span>Arepitas de queso, cochino frito y nata</span><b>12,95 €</b></li>
+        <li><span>Patacones mixtos</span><b>12,95 €</b></li>
+        <li><span>Ración de cochino frito</span><b>13,95 €</b></li>
+      </ul>
+    </div>
+
+    <!-- ---------- BURGERS ---------- -->
+    <div class="menu__panel" id="c-burgers" role="tabpanel">
+      <h3>Olé Burgers</h3>
+      <ul class="menu__list">
+        <li><span>Olé Burger <small>lechuga, tomate, cebolla y carne de ternera</small></span><b>7,95 €</b></li>
+        <li><span>Olé Burger 2.0 <small>ternera, bacon, queso, jamón, huevo, patatas fritas y salsa</small></span><b>10,95 €</b></li>
+        <li><span>Pollo Burger <small>pollo, bacon, queso, jamón, huevo y palitos de papa</small></span><b>10,95 €</b></li>
+        <li><span>Todo Terreno 4x4 <small>chuleta de sajonia, pollo, carne, chorizo, bacon, queso, jamón, huevo y palitos de papa</small></span><b>14,95 €</b></li>
+      </ul>
+    </div>
+
+    <!-- ---------- PERRITOS Y SÁNDWICHES ---------- -->
+    <div class="menu__panel" id="c-perritos" role="tabpanel">
+      <h3>Perritos y sándwiches</h3>
+      <ul class="menu__list">
+        <li><span>Sándwich mixto</span><b>2,95 €</b></li>
+        <li><span>Perrito caliente <small>salchicha Frankfurt, repollo, queso, cebolla y salsas</small></span><b>3,95 €</b></li>
+        <li><span>Sándwich con huevo</span><b>3,95 €</b></li>
+        <li><span>Perrito especial <small>con aguacate y bacon</small></span><b>4,95 €</b></li>
+        <li><span>Sándwich club</span><b>11,95 €</b></li>
+      </ul>
+    </div>
+
+    <!-- ---------- CAFETERÍA (PENDIENTE: completar con la carta real) ---------- -->
+    <div class="menu__panel" id="c-cafeteria" role="tabpanel">
+      <h3>Desayunos, cafetería y bocadillos</h3>
+      <p class="menu__note">Café, desayunos y bocadillos españoles (tortilla francesa, ternera a la plancha y más) desde media mañana. Pregunta en barra por las opciones del día.</p>
+    </div>
+
+    <p class="menu__foot">Precios con IVA incluido. Si tienes alguna alergia o intolerancia, pregúntanos: te informamos de los alérgenos de cada plato.</p>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS (PENDIENTE: historia real de la familia) ============ -->
+<section class="section story" id="nosotros">
+  <div class="wrap story__inner">
+    <div class="story__copy" data-reveal>
+      <p class="eyebrow">Nuestra historia</p>
+      <h2>Una cocina de <span class="script">familia</span></h2>
+      <p>Olé Venezuela nació para traer a Torrejón los sabores con los que crecimos: la arepa recién hecha por la mañana, la cachapa con queso de mano, las empanadas del domingo.</p>
+      <p>Somos un restaurante de barrio, familiar e independiente. Aquí se juntan quienes echan de menos Venezuela y quienes la descubren por primera vez, y a todos los recibimos igual: con raciones generosas y un trato cercano.</p>
+      <blockquote>«Hecho con cariño y sabor venezolano.»</blockquote>
+    </div>
+    <ul class="story__said" data-reveal>
+      <li><b>Sabor auténtico</b><span>Lo que más repiten quienes nos visitan.</span></li>
+      <li><b>Raciones generosas</b><span>Nadie se va con hambre.</span></li>
+      <li><b>Buena relación calidad-precio</b><span>Entre 10 y 20 € por persona.</span></li>
+      <li><b>Trato cercano</b><span>Como en casa de la familia.</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="flags" role="presentation"><i class="ve"></i><i class="es"></i></div>
+
+<!-- ============ PEDIR A DOMICILIO ============
+     PENDIENTE: confirmar los enlaces de Glovo y Just Eat de la tienda -->
+<section class="section order" id="pedir">
+  <div class="wrap">
+    <header class="section__head" data-reveal>
+      <p class="eyebrow">A domicilio o para llevar</p>
+      <h2>Pídelo y <span class="script">disfrútalo</span> en casa</h2>
+    </header>
+    <div class="order__grid">
+      <a class="order__card order__card--uber" data-reveal href="https://www.ubereats.com/es/store/ole-venezuela-madrid/Bl91vQO1XF6DGgyatp2t4Q" target="_blank" rel="noopener">
+        <b>Uber Eats</b><span>Pedir ahora →</span>
+      </a>
+      <a class="order__card order__card--glovo" data-reveal href="https://glovoapp.com/es/es/torrejon-de-ardoz/" target="_blank" rel="noopener">
+        <b>Glovo</b><span>Pedir ahora →</span>
+      </a>
+      <a class="order__card order__card--justeat" data-reveal href="https://www.just-eat.es/" target="_blank" rel="noopener">
+        <b>Just Eat</b><span>Pedir ahora →</span>
+      </a>
+      <a class="order__card order__card--phone" data-reveal href="tel:+34910236427">
+        <b>910 23 64 27</b><span>Encarga y recoge →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISÍTANOS ============
+     PENDIENTE: poner el horario real en la tabla -->
+<section class="section visit" id="visitanos">
+  <div class="wrap visit__inner">
+    <div data-reveal>
+      <p class="eyebrow">Visítanos</p>
+      <h2>Te esperamos en <span class="script">Soto del Henares</span></h2>
+      <address>
+        Calle Francisco Salzillo, 141<br>
+        28850 Torrejón de Ardoz, Madrid
+      </address>
+      <p><a href="tel:+34910236427">910 23 64 27</a></p>
+      <table class="hours">
+        <caption>Horario</caption>
+        <tr><th>Lunes a viernes</th><td>Por confirmar</td></tr>
+        <tr><th>Sábados y domingos</th><td>Por confirmar</td></tr>
+      </table>
+      <p class="visit__tags">Sala · Barra · Terraza · Accesible · Apto para familias y grupos</p>
+      <a class="btn" href="https://maps.app.goo.gl/ioP25Xh2Y79MMxa38" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+    <div class="visit__map" data-reveal>
+      <iframe title="Mapa de Olé Venezuela en Torrejón de Ardoz" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Ol%C3%A9+Venezuela,+Calle+Francisco+Salzillo+141,+28850+Torrej%C3%B3n+de+Ardoz&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREGUNTAS FRECUENTES ============
+     Si cambias una respuesta aquí, cámbiala también en el bloque FAQPage del <head> -->
+<section class="section faq" id="preguntas">
+  <div class="wrap faq__inner">
+    <header class="section__head" data-reveal>
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que más nos <span class="script">preguntan</span></h2>
+    </header>
+    <div class="faq__list" data-reveal>
+      <details><summary>¿Dónde está Olé Venezuela?</summary><p>En la Calle Francisco Salzillo, 141, en Soto del Henares (Torrejón de Ardoz, Madrid). Tenemos sala, barra y terraza.</p></details>
+      <details><summary>¿Hacéis comida a domicilio?</summary><p>Sí. Puedes pedir por Uber Eats, Glovo y Just Eat, o llamarnos al 910 23 64 27 para encargar y recoger.</p></details>
+      <details><summary>Nunca he probado la comida venezolana, ¿qué pido?</summary><p>El Plato Degustación: 4 mini arepas, 2 tequeños, 2 tostones y 2 mini cachapas. Es la mejor forma de probar un poco de todo.</p></details>
+      <details><summary>¿Tenéis opciones vegetarianas?</summary><p>Sí: arepa vegetariana, empanadas y cachapas de queso, tequeños y plátano frito con queso.</p></details>
+      <details><summary>¿Cuánto cuesta comer en Olé Venezuela?</summary><p>Entre 10 y 20 € por persona. Las empanadas cuestan desde 3,95 € y las arepas desde 7 €.</p></details>
+      <details><summary>¿Es lo mismo que Arepa Olé?</summary><p>No. Olé Venezuela es un restaurante familiar e independiente de Torrejón de Ardoz, sin relación con la cadena Arepa Olé.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIE ============ -->
+<footer class="foot">
+  <div class="flags" role="presentation"><i class="ve"></i><i class="es"></i></div>
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <img src="img/logo.webp" alt="Logotipo de Olé Venezuela" width="96" height="96" loading="lazy">
+      <p>Cocina venezolana casera, cafetería y desayunos en Torrejón de Ardoz.</p>
+    </div>
+    <div>
+      <h3>Encuéntranos</h3>
+      <p>Calle Francisco Salzillo, 141<br>28850 Torrejón de Ardoz, Madrid<br><a href="tel:+34910236427">910 23 64 27</a></p>
+    </div>
+    <div>
+      <h3>Síguenos</h3>
+      <p><a href="https://www.instagram.com/olevenezuelaofc/" target="_blank" rel="noopener">Instagram · @olevenezuelaofc</a></p>
+    </div>
+  </div>
+  <p class="foot__legal wrap">© <span data-year>2026</span> Ole Venezuela SL · <a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></p>
+</footer>
+
+<a class="call" href="tel:+34910236427" aria-label="Llamar a Olé Venezuela">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+</a>
+
+<script src="main.js" defer></script>
+</body>
+</html>
