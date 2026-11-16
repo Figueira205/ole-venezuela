@@ -331,7 +331,53 @@
 <!-- ============ ANATOMÍA DE LA EMPANADA ============ -->
 <section class="section anatomy">
   <div class="wrap anatomy__inner">
-    <img src="img/anatomia-empanada.webp" alt="Infografía: anatomía de la empanada venezolana, de la puntica al culito" width="1371" height="1397" loading="lazy" data-reveal>
+    <svg class="anatomy__svg" viewBox="0 0 1371 1397" role="img" aria-labelledby="anatT anatD" data-reveal>
+      <title id="anatT">Anatomía de la empanada</title>
+      <desc id="anatD">La puntica: se empieza por aquí. Humito: señal que muestra su frescura y peligrosidad térmica. La prueba: el primer mordisco, de aquí en adelante lleva ají. Compartir: este es el punto en que se puede compartir un pedacito. Punto de reflexión: cuando piensas si pedir otra antes de terminar la que te estás comiendo. Cuerpo: en forma de media luna, hecho de oro (maíz) con un delicioso relleno. El culito: esta es la mejor parte, nunca se comparte.</desc>
+      <defs>
+        <radialGradient id="emp" cx="35%" cy="50%" r="75%">
+          <stop offset="0" stop-color="#C9541A"/><stop offset=".45" stop-color="#E8861F"/><stop offset=".8" stop-color="#F2A71B"/><stop offset="1" stop-color="#F7C948"/>
+        </radialGradient>
+        <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45  0 0 0 0 .2  0 0 0 0 .05  0 0 0 .55 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+      </defs>
+      <rect width="1371" height="1397" rx="36" fill="#FBF3E8"/>
+      <g font-family="Barlow Condensed, sans-serif" font-weight="700" fill="#730E16" font-size="118" text-anchor="middle">
+        <text x="1120" y="160">ANATOMÍA</text><text x="1120" y="280">DE LA</text><text x="1120" y="400">EMPANADA</text>
+      </g>
+      <!-- empanada -->
+      <path d="M520 345 C1010 395 1010 1125 520 1175 C470 900 470 620 520 345Z" fill="url(#emp)"/>
+      <path d="M520 345 C1010 395 1010 1125 520 1175 C470 900 470 620 520 345Z" filter="url(#grain)" opacity=".5"/>
+      <path d="M528 360 C500 620 500 900 528 1160" fill="none" stroke="#9A3A10" stroke-width="14" stroke-linecap="round" opacity=".35"/>
+      <!-- guías -->
+      <g stroke="#0D0D0D" stroke-width="9" fill="#0D0D0D" stroke-linecap="round">
+        <line x1="565" y1="272" x2="565" y2="410"/><circle cx="565" cy="272" r="14"/><circle cx="565" cy="410" r="14"/>
+        <line x1="200" y1="545" x2="640" y2="545"/><circle cx="200" cy="545" r="14"/><circle cx="640" cy="545" r="14"/>
+        <line x1="430" y1="660" x2="745" y2="660"/><circle cx="430" cy="660" r="14"/><circle cx="745" cy="660" r="14"/>
+        <line x1="760" y1="838" x2="1072" y2="840"/><circle cx="760" cy="838" r="14"/><circle cx="1072" cy="840" r="14"/>
+        <line x1="370" y1="1020" x2="595" y2="1028"/><circle cx="370" cy="1020" r="14"/><circle cx="595" cy="1028" r="14"/>
+        <polyline points="658,958 658,1004 975,1006" fill="none"/><circle cx="658" cy="958" r="14"/><circle cx="975" cy="1006" r="14"/>
+        <line x1="545" y1="1140" x2="545" y2="1215"/><circle cx="545" cy="1140" r="14"/><circle cx="545" cy="1215" r="14"/>
+      </g>
+      <!-- etiquetas -->
+      <g font-family="Barlow Condensed, sans-serif" font-weight="700" fill="#0D0D0D" font-size="68" text-anchor="middle">
+        <text x="560" y="205">LA PUNTICA</text>
+        <text x="255" y="420">HUMITO</text>
+        <text x="255" y="690">LA PRUEBA</text>
+        <text x="1185" y="690">COMPARTIR</text>
+        <text x="195" y="995">PUNTO DE</text><text x="195" y="1065">REFLEXIÓN</text>
+        <text x="1125" y="1035">CUERPO</text>
+        <text x="540" y="1290">EL CULITO</text>
+      </g>
+      <g font-family="Barlow, sans-serif" font-weight="500" fill="#754B2A" font-size="34" text-anchor="middle">
+        <text x="565" y="250">Se empieza por aquí</text>
+        <text x="255" y="465">Señal que muestra su</text><text x="255" y="505">frescura y peligrosidad térmica</text>
+        <text x="255" y="735">El primer mordisco, de aquí en</text><text x="255" y="775">adelante lleva ají</text>
+        <text x="1140" y="735">Este es el punto en que se</text><text x="1140" y="775">puede compartir un pedacito</text>
+        <text x="230" y="1110">Cuando piensas si pedir otra,</text><text x="230" y="1150">antes de terminar la</text><text x="230" y="1190">que te estás comiendo</text>
+        <text x="1100" y="1085">En forma de media luna,</text><text x="1100" y="1125">hecho de oro (maíz)</text><text x="1100" y="1165">con un delicioso relleno</text>
+        <text x="580" y="1340">Esta es la mejor parte, <tspan font-weight="700" fill="#730E16">NUNCA</tspan> se comparte</text>
+      </g>
+    </svg>
     <div data-reveal>
       <p class="eyebrow">Manual de uso</p>
       <h2>Anatomía de la <span class="script">empanada</span></h2>

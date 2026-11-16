@@ -171,7 +171,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.2rem); }
 /* ---------- Anatomía de la empanada ---------- */
 .anatomy { background: #ECECEF; }
 .anatomy__inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 6vw, 80px); align-items: center; }
-.anatomy img { border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0,0,0,.12); }
+.anatomy__svg { width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0,0,0,.12); }
 .anatomy p:not(.eyebrow) { max-width: 46ch; }
 @media (max-width: 760px) { .anatomy__inner { grid-template-columns: 1fr; } }
 
