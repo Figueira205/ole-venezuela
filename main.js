@@ -68,5 +68,12 @@
     show(btns[0]);
   }
 
+  // Vídeo: solo se descarga y reproduce cuando está a la vista
+  var vid = $('.hook__video');
+  if (vid) {
+    if (reduce || !('IntersectionObserver' in window)) { vid.controls = true; vid.preload = 'metadata'; }
+    else new IntersectionObserver(function (e) { e[0].isIntersecting ? vid.play().catch(function () {}) : vid.pause(); }, { threshold: .3 }).observe(vid);
+  }
+
   var y = $('[data-year]'); if (y) y.textContent = new Date().getFullYear();
 })();
