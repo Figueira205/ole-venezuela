@@ -75,5 +75,14 @@
     else new IntersectionObserver(function (e) { e[0].isIntersecting ? vid.play().catch(function () {}) : vid.pause(); }, { threshold: .3 }).observe(vid);
   }
 
+  // Galería: flechas en ordenador (en móvil se desliza con el dedo)
+  var gt = $('.gallery__track'), gp = $('.gallery__btn--prev'), gn = $('.gallery__btn--next');
+  if (gt && gp) {
+    var upd = function () { gp.disabled = gt.scrollLeft < 5; gn.disabled = gt.scrollLeft + gt.clientWidth > gt.scrollWidth - 5; };
+    gp.addEventListener('click', function () { gt.scrollBy({ left: -gt.clientWidth, behavior: 'smooth' }); });
+    gn.addEventListener('click', function () { gt.scrollBy({ left: gt.clientWidth, behavior: 'smooth' }); });
+    gt.addEventListener('scroll', upd, { passive: true }); addEventListener('resize', upd); upd();
+  }
+
   var y = $('[data-year]'); if (y) y.textContent = new Date().getFullYear();
 })();
